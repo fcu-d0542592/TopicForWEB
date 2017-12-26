@@ -2,6 +2,7 @@
 
 <html>
 	<head>
+		<bgsound src="./PPAP.mp3" loop="infinite">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -172,8 +173,6 @@
 				border: 3px solid rgb(106, 109, 102);
 				background-color: rgb(106, 109, 102);
 				font-family: monospace;
-				top: 15%;
-				left: 20px;
 				width: 15%;
 				height: 70%;
 			}
@@ -197,7 +196,7 @@
 	</head>
 	
 	<body>
-		<div class="containor-fluid">
+		<div class="container-fluid">
 			<div class="nevigation-bar row">
 				<ul>
 					<li><a id="top" href="#home">HOME</a></li>
@@ -211,18 +210,20 @@
 		
 			<div class="row">
 				<div class ="list col-sm-6"> 
-					<ul> 
-						</br></br>
+					<ul>
+						<div class="row">
 						<li><a id="list" href="#feature1">鄉村美食</a></li>
 						<li><a id="list" href="#feature2">鄉村風景</a></li>
 						<li><a id="list" href="#feature3">鄉村文化</a></li>
 						<li><a id="list" href="#feature4">周邊交通</a></li>
 						<li><a id="list" href="#feature5">鄉村位置</a></li>
+						</div>
 					</ul>
 				</div>
 				
 				<div class="col-sm-6">
 					</br>
+					<marquee direction="right" width="600" height="18" scrollamount="20" behavior="scroll">新莊多美食~</marquee>
 					<h1><center>鄉村美食</center></h2>
 					<center>
 						<input type="image" src="long-arrow-left.png" onclick="cycle1();" width="70px" />
